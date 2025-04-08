@@ -14,7 +14,7 @@ readme_content = """# WordPress on Raspberry Pi Setup
 
 This project provides a reusable WordPress setup running on Ubuntu Server and Raspberry Pi. It's ideal for personal websites, portfolios, and learning purposes.
 
-## ✅ What's Included
+##  What's Included
 
 - Ubuntu Server installation on Raspberry Pi
 - LAMP stack setup (Apache, MariaDB, PHP)
@@ -24,7 +24,7 @@ This project provides a reusable WordPress setup running on Ubuntu Server and Ra
 - Clean WordPress files (without uploads)
 - Backup and restore example
 
-## 📁 Contents
+##  Contents
 
 - `wordpress-clean-setup.tar.gz` – base WordPress files (without media uploads)
 - `docs/setup-guide.md` – full installation steps
@@ -32,7 +32,7 @@ This project provides a reusable WordPress setup running on Ubuntu Server and Ra
 - `config/apache-vhost.conf` – Apache virtual host config
 - `config/backup-script.sh` – shell script to create backups
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Flash Ubuntu Server on a Raspberry Pi
 2. Follow the setup guide in `docs/setup-guide.md`
@@ -43,7 +43,7 @@ This project provides a reusable WordPress setup running on Ubuntu Server and Ra
 # Create setup-guide.md
 setup_guide_content = """# Full Setup Guide: WordPress on Raspberry Pi
 
-## 🧰 Requirements
+##  Requirements
 
 - Raspberry Pi 4 or 5
 - Ubuntu Server 22.04/24.04 LTS
@@ -52,7 +52,7 @@ setup_guide_content = """# Full Setup Guide: WordPress on Raspberry Pi
 
 ---
 
-## 🔧 1. Install Ubuntu Server on Raspberry Pi
+##  1. Install Ubuntu Server on Raspberry Pi
 
 Flash Ubuntu Server using Raspberry Pi Imager. After first boot:
 
