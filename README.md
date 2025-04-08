@@ -1,2 +1,0 @@
-# wordpress-raspberrypi-setup
- 
