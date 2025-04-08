@@ -1,4 +1,4 @@
-# Full Setup Guide: WordPress on Raspberry Pi
+# 1. Full Setup Guide: WordPress on Raspberry Pi
 
 ## 1. Install Ubuntu Server
 
@@ -28,7 +28,7 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wp_user'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 
-# 🌐 4. Configure Apache
+# 4. Configure Apache
 ## Copy the sample virtual host config:
 
 sudo cp config/apache-vhost.conf /etc/apache2/sites-available/wordpress.conf
@@ -36,24 +36,24 @@ sudo a2ensite wordpress
 sudo systemctl reload apache2
 
 
-# 📦 5. Deploy WordPress
+# 5. Deploy WordPress
 
-## 4. Extract WordPress Archive
+## 5. Extract WordPress Archive
 
 sudo tar -xzvf wordpress-clean-setup.tar.gz -C /var/www/html --strip-components=1
 
-## 5. Set Permissions
+## 6. Set Permissions
 
 sudo chown -R www-data:www-data /var/www/html
 sudo find /var/www/html -type d -exec chmod 755 {} \;
 sudo find /var/www/html -type f -exec chmod 644 {} \;
 
-## 6. Enable SSL (Optional)
+## 7. Enable SSL (Optional)
 
 sudo apt install certbot python3-certbot-apache -y
 sudo certbot --apache
 
-## 7. Backup
+## 8. Backup
 ### Use config/backup-script.sh to back up files and database.
 
 
@@ -61,13 +61,13 @@ Then `Ctrl + O`, `Enter`, `Ctrl + X`.
 
 ---
 
-### 📁 4. Create the `config` folder
+###  Create the `config` folder
 
 ```bash
 mkdir -p config
 
 
-# 📄 5. Create config/wp-config-sample.php
+#  2. Create config/wp-config-sample.php
 
 <?php
 define( 'DB_NAME', 'wordpress' );
