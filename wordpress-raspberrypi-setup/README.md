@@ -38,7 +38,35 @@ This project provides a reusable WordPress setup running on Ubuntu Server and Ra
 2. Follow the setup guide in `docs/setup-guide.md`
 3. Extract the WordPress archive to your web root
 4. Customize your configuration and go live!
+
 """
+## Energy Consumption Cost Estimation
+
+Running a self-hosted WordPress site on a Raspberry Pi is highly energy-efficient. Here's an estimate of the power usage and cost for continuous operation.
+
+### Estimated Power Usage
+
+| Raspberry Pi Model | Avg Power Consumption | Daily Usage | Monthly Usage | Yearly Usage |
+|--------------------|-----------------------|-------------|----------------|----------------|
+| Pi 4 (8GB)         | ~3.5W                 | ~0.084 kWh  | ~2.52 kWh     | ~30.66 kWh     |
+| Pi 5 (16GB)        | ~6.0W                 | ~0.144 kWh  | ~4.32 kWh     | ~52.56 kWh     |
+
+> *Actual consumption may vary based on connected peripherals, cooling, and workload.*
+
+### Cost Estimation (Germany 🇩🇪 Example)
+
+Assuming an average electricity price of **€0.35 per kWh**:
+
+| Raspberry Pi Model | Monthly Cost | Yearly Cost |
+|--------------------|--------------|-------------|
+| Pi 4 (8GB)         | ~€0.88       | ~€10.73     |
+| Pi 5 (16GB)        | ~€1.51       | ~€18.40     |
+
+### Why It Matters
+
+- **Low Cost**: Running your own WordPress site at under €1–2/month.
+- **Green Hosting**: Great for energy-conscious personal or educational projects.
+- **24/7 Uptime**: Ideal for consistently available self-hosted portfolios or blogs.
 
 # Create setup-guide.md
 setup_guide_content = """# Full Setup Guide: WordPress on Raspberry Pi
