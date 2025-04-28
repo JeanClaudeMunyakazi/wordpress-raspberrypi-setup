@@ -12,7 +12,7 @@ config_path.mkdir(parents=True, exist_ok=True)
 # Create README.md
 readme_content = """# WordPress on Raspberry Pi Setup
 
-This project provides a reusable WordPress setup running on Ubuntu Server and Raspberry Pi. It's ideal for personal websites, portfolios, and learning purposes.
+This project transforms a Raspberry Pi 4 (8GB RAM) into a fully functional web server using Ubuntu Server 24.04.2 LTS. With a 128GB microSD card as the primary storage, the setup supports a robust LAMP stack, comprising Apache, MariaDB, and PHP, followed by the installation of WordPress as a content management system (CMS). To enhance security and accessibility, an SSL certificate was implemented, and a custom domain name was configured. It's ideal for personal websites, portfolios, and learning purposes.
 
 ##  What's Included
 
